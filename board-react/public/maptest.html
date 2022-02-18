@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map함수 사용. 일반 html태그를 사용하는 부분</title>
+
+    <script>
+        window.onload = function(){
+            const numbers = [1,2,3,4,5];
+            // for(var i = 0; i < numbers.length; i++) {
+            //     document.getElementById("root").innerHTML += numbers[i] + "<br>";
+            // }
+
+            // 원본인 numbers는 바꾸지 않고, 복사본인 numbers_copy만 바뀐다.
+            console.log(numbers);
+            const numbers_copy = numbers.map(function(n) {return n*2 + "<br>"});
+            document.getElementById("root").innerHTML += numbers_copy;
+
+ 
+
+            document.getElementById("root").innerHTML = "<ul>" + menus_copy.join('') + "</ul>"
+        }
+
+    </script>
+
+  </head>
+  <body>
+
+    <div id="root"></div>
+ 
+  </body>
+</html>
